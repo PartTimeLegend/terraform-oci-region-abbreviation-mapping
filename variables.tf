@@ -1,6 +1,11 @@
 variable "oci_region_abbr_map" {
   type        = map(string)
   description = "Map of Oracle Cloud Infrastructure region identifiers to short abbreviations for naming resources"
+
+  # Oracle region coverage must include all active family variants published by OCI,
+  # including commercial, gov, DOD, and preview regions. When Oracle adds new
+  # regions, update this map from Oracle's official region list rather than
+  # inferring names from existing entries.
   default = {
     "af-casablanca-1" = "lej"
     "af-johannesburg-1" = "jnb"

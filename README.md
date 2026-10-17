@@ -9,6 +9,7 @@ A simple module that provides mappings between Oracle Cloud Infrastructure regio
 - Mapping of OCI region identifiers to short abbreviations
 - Supports both canonical region IDs and normalized lowercase names without hyphens
 - Uses Oracle's published region keys as the default abbreviations
+- Covers the OCI region families used in practice, including commercial, gov, DOD, and preview variants when Oracle publishes them
 - Helper output map to simplify regional naming across OCI resources
 - Zero external dependencies
 
